@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    top: 0;
+}
+
+.logo{
+    display: flex;
+    width: 25%;
+    height: 25%;
+}
+body{
+    background-image: url(../Images/Fondos/fondo_lulea_3.png);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
