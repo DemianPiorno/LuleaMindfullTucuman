@@ -2,16 +2,11 @@
     margin: 0;
     top: 0;
 }
-.nav ul{
+
+.nav{
     display: flex;
-    float: right;
-    text-align: right;
-    list-style: none;
-}
-.logo{
-    display: flex;
-    width: 25%;
-    height: 25%;
+    justify-content: space-between;
+    align-content: flex-end;
 }
 body{
     background-image: url(../Images/Fondos/fondo_lulea_3.png);
