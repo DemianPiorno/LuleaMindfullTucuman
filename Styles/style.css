@@ -2,7 +2,12 @@
     margin: 0;
     top: 0;
 }
-
+.nav ul{
+    display: flex;
+    float: right;
+    text-align: right;
+    list-style: none;
+}
 .logo{
     display: flex;
     width: 25%;
@@ -10,9 +15,14 @@
 }
 body{
     background-image: url(../Images/Fondos/fondo_lulea_3.png);
-    position: fixed;
+    position: relative;
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.señalador_empresa_b{
+    position: relative;
+    height: 40%;
+    width: 40%;
 }
