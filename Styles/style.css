@@ -59,6 +59,7 @@ body{
     height: 100%;
     width: 100%;
     padding-top: 20vh;
+    padding-bottom: 0%;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -85,4 +86,180 @@ body:before {
 }
 h1, section{
     padding-left: 5px;
+}
+/* index */
+section{
+    margin: 15px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+.nosotros_index{
+    display: flex;
+    justify-content: center;
+}
+/* seleccion de shop */
+
+#seleccion_shop{
+    display: grid;
+    grid-template-areas: "seleccion_shop1" "seleccion_shop2" "seleccion_shop3";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 150px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+#seleccion_shop .seleccion_shop1{
+    display: grid;
+    align-content: center;
+    align-items: center;
+grid-area: "seleccion_shop1";
+width: 200px;
+height: 100px;
+background: #C4C4C4;
+border-radius: 90px;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#seleccion_shop .seleccion_shop1 p{
+    display: flex;
+    padding-top: 15px;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+}
+#seleccion_shop .seleccion_shop2{
+    display: grid;
+    align-content: center;
+    align-items: center;
+    grid-area: "seleccion_shop2";
+    width: 200px;
+    height: 100px;
+    background: #C4C4C4;
+    border-radius: 90px;
+    margin-top: 15px;
+    box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#seleccion_shop .seleccion_shop2 p{
+    display: flex;
+    padding-top: 15px;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+}
+#seleccion_shop .seleccion_shop3{
+    display: grid;
+    align-content: center;
+    align-items: center;
+grid-area: "seleccion_shop3";
+width: 200px;
+height: 100px;
+background: #C4C4C4;
+border-radius: 90px;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#seleccion_shop .seleccion_shop3 p{
+    display: flex;
+    padding-top: 15px;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+}
+
+/* Contactanos grid */
+.grid_contactanos{
+    display: grid;
+    grid-template-areas: 
+"formulario_mensaje" "info_mar"
+"contacto_wsp" "info_talleres"
+"contacto_ig" "info_talleres"
+"ubi" "ubi";
+grid-template-columns: 60% 40%;
+grid-template-rows: 25% 25% 25% 25%;
+}
+.formulario_mensaje form{
+    grid-area: formulario_mensaje;
+}
+.info_mar{
+}
+.ubi{
+grid-area: ubi;
+}
+.info_talleres
+#carouselExampleFade .carousel{
+    grid-area: contacto_wsp;
+}
+#carouselExampleFade .carousel{
+    grid-area: contacto_ig;
+}
+/* index  prefooter*/
+#prefooter{
+    display: grid;
+    grid-template-areas: "prefooter1" "prefooter2" "prefooter3" "prefooter4";
+    grid-template-columns: repeat(4, 500px);
+    grid-template-rows: auto;
+    margin-right: 50px;
+}
+div.prefooter1{
+    grid-area: "prefooter1";
+    margin-left: 70px;
+}
+div.prefooter2{
+    grid-area: "prefooter2";
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+}
+div.prefooter3{
+    grid-area: "prefooter3";
+    display: flex;
+    justify-content: left;
+    margin-right: 30px;
+}
+div.prefooter4{
+    grid-area: "prefooter4";
+    display: flex;
+    justify-content: left;
+    margin-right: 70px;
+}
+/*footer grid*/
+footer{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 300px;
+    grid-template-areas: "qr" "info" "arrepentimiento" "redes";
+    align-items: center;
+    align-content: center;
+    background: rgb(160, 158, 158);
+    margin-top: 15px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    width: 100%;
+    height: 200px;
+}
+.qr{
+    display: grid;
+    grid-area: "qr";
+    flex-direction: column;
+    justify-content: center;
+}
+.info{
+    grid-area: "info";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.redes{
+    grid-area: "redes";
+}
+.arrepentimiento{
+    grid-area: "arrepentimiento";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
