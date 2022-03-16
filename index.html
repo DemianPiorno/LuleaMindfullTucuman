@@ -13,32 +13,56 @@
 
 <body>
     <header>
-        <div>
-            <nav class="menu-fixed">
-                <div>
-                    <a href="./index.html">
-                        <img class="logo" src="./Images/Logo/Lulea_sinfondo-removebg-preview.png"alt="logo de lulea Tucuman">
+            <nav class="navbar navbar-light fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./Images/Logo/Lulea_sinfondo-removebg-preview.png" alt="">
                     </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Inicio</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/contactanos.html">Contactanos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/nosotrxs.html">Nosotrxs</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Querés comprar?
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li><a class="dropdown-item" href="./pages/shop.html">Shop</a></li>
+                                        <li><a class="dropdown-item" href="./pages/carrito.html">Carrito</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Mandanos un mensaje</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/nosotrxs.html">Nosotrxs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/contactanos.html">Contactanos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/shop.html">Shop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/carrito.html">Carrito</a>
-                    </li>
-                </ul>
             </nav>
-        </div>
     </header>
     <main>
         <h1>
@@ -48,13 +72,16 @@
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./Images/Colecciones/Playa/coleccion-yoga-en-la-playa-portada.jpg" class="d-block w-100" alt="...">
+                        <img src="./Images/Colecciones/Playa/coleccion-yoga-en-la-playa-portada.jpg"
+                            class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="./Images/Colecciones/Playa/coleccion-yoga-en-la-playa-derecha.jpg" class="d-block w-100" alt="...">
+                        <img src="./Images/Colecciones/Playa/coleccion-yoga-en-la-playa-derecha.jpg"
+                            class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="./Images/Colecciones/Playa/coleccion-yoga-en-la-playa-izquierda.jpg" class="d-block w-100" alt="...">
+                        <img src="./Images/Colecciones/Playa/coleccion-yoga-en-la-playa-izquierda.jpg"
+                            class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
@@ -70,77 +97,84 @@
             </div>
         </section>
         <div class="nosotros_index">
-            <img src="./Images/Nosotros_index/245647457_2306931846272482_2880159306986421523_n.jfif" alt="">
+            <img src="./Images/Nosotros_index/245647457_2306931846272482_2880159306986421523_n.jfif" class="img-fluid"
+                alt="">
         </div>
-        <div id="seleccion_shop">
+        <div class="seleccion_shop row row-cols-1 row-cols-md-3">
             <div class="seleccion_shop1">
-                <p></a> SHOP WOMAN</p>
-            </div>
-            <div class="seleccion_shop2">
-                <p>SHOP NO GENDER</p>
-            </div>
-            <div class="seleccion_shop3">
-                <p>SHOP BOY</p>
-            </div>
-        </div>
-    <div id="prefooter">
-        <div class="prefooter1">
-            <a href="./index.html">
-                <img src="./Images/Prefoter_index/3-8-WHITE-VANASPATI-CAMPANA2-1280x1920.jpg" alt="Prefoter_index">
-            </a>
-        </div>
-        <div class="prefooter2">
-            <a href="./pages/contactanos.html">
-                <img src="./Images/Prefoter_index/coleccion-cotton-swasti-1-scaled.jpg" alt="Prefoter_contactanos">
-            </a>
-        </div>
-        <div class="prefooter3">
-            <a href="./pages/shop.html">
-                <img src="./Images/Prefoter_index/3-8-WHITE-VANASPATI-CAMPANA2-1280x1920.jpg" alt="Prefoter_shop">
-            </a>
-        </div>
-        <div class="prefooter4">
-            <a href="./pages/carrito.html">
-                <img src="./Images/Prefoter_index/coleccion-cotton-swasti-1-scaled.jpg" alt="Prefoter_carrito">
-            </a>
-        </div>
-    </div>
-    </main>
-    <footer>
-            <div class="qr">
-                <img src="./Images/Footer/prueba.png" alt="qr compra">
-            </div>
-            <div class="info">
-                <h3>Nosotrxs</h3>
-                <ul>
-                    <li>Trabaja con nosotros</li>
-                    <li><a href="">Pedidos por mayor</a></li>
-                    <li>Empresa B</li>
-                    <li>Cuidado del medio ambiente</li>
-                </ul>
-            </div>
-            <div class="arrepentimiento">
-                <h3>
-                    Boton de arrepentimiento
-                </h3>
-                <a href="./pages/contactanos.html">
-                    <img src="./Images/Footer/arrepentimiento.jpeg" alt="boton de arrepentimiento">
+                <a href="./pages/shop.html">
+                    <p>SHOP WOMAN</p>
                 </a>
             </div>
-            <div class="redes">
-                <h3>Nuestras Redes</h3>
-                <ul>
-                    <li>
-                        <a href="https://www.instagram.com/lulea.tucuman/">Nuestro Instagram</a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/lulea.tucuman/">Nuestro Contacto_whatsapp</a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/lulea.tucuman/">Nuestro instagram</a>
-                    </li>
-                </ul>
+            <div class="seleccion_shop2">
+                <a href="./pages/shop.html">
+                    <p>SHOP NO GENDER</p>
+                </a>
             </div>
+            <div class="seleccion_shop3">
+                <a href="./pages/shop.html">
+                    <p>SHOP BOY</p>
+                </a>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="./Images/Colecciones/Classic/Coleccion_classic1.jpeg" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./Images/Colecciones/Classic/Coleccion_classic2.jfif" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./Images/Colecciones/Classic/Coleccion_classic3.jpeg" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./Images/Colecciones/Classic/Coleccion_classic4.jpeg" class="card-img-top" alt="...">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="row row-cols-1 row-cols-md-4">
+        <div class="qr">
+            <img src="./Images/Footer/prueba.png" alt="qr compra">
+        </div>
+        <div class="info">
+            <h3>Nosotrxs</h3>
+            <ul>
+                <li>Trabaja con nosotros</li>
+                <li><a href="">Pedidos por mayor</a></li>
+                <li>Empresa B</li>
+                <li>Cuidado del medio ambiente</li>
+            </ul>
+        </div>
+        <div class="arrepentimiento">
+            <h3>
+                Boton de arrepentimiento
+            </h3>
+            <a href="./pages/contactanos.html">
+                <img src="./Images/Footer/arrepentimiento.jpeg" alt="boton de arrepentimiento">
+            </a>
+        </div>
+        <div class="redes">
+            <h3>Nuestras Redes</h3>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/lulea.tucuman/">Nuestro Instagram</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/lulea.tucuman/">Nuestro Contacto_whatsapp</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/lulea.tucuman/">Nuestro instagram</a>
+                </li>
+            </ul>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
