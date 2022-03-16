@@ -30,28 +30,8 @@
     justify-content: center;
     color: #000;
 }
-.logo{
-    width: 15%;
-}
-.header nav{
-    display: flex;
-    justify-content: space-between;
-    align-content: flex-end;
-    margin: 10px;
-    float: left;
-    background: #fff;
-}
-.header nav ul li a{
-    display: block;
-    padding: 20px;
-    color: #fff;
-    text-decoration: none;
-}
-.ul{
-    color: #fff;
-}
-.header nav ul li a:hover{
-    background: #fff; 
+header nav div a img{
+    width: 40%;
 }
 body{
     background-image: url(../Images/Fondos/11113-paisajes-bonitos.jpg);
@@ -95,23 +75,23 @@ h1{
     display: flex;
     justify-content: center;
 }
-.nosotros_index{
+/* index */
+.home{
     display: flex;
-    justify-content: center;
 }
 /* seleccion de shop */
 
-#seleccion_shop{
+.seleccion_shop{
     display: grid;
     grid-template-areas: "seleccion_shop1" "seleccion_shop2" "seleccion_shop3";
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 150px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     justify-items: center;
     align-items: center;
 }
-#seleccion_shop .seleccion_shop1{
+.seleccion_shop .seleccion_shop1{
     display: grid;
     align-content: center;
     align-items: center;
@@ -123,14 +103,14 @@ border-radius: 90px;
 box-sizing: border-box;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-#seleccion_shop .seleccion_shop1 p{
+.seleccion_shop .seleccion_shop1 p{
     display: flex;
     padding-top: 15px;
     justify-content: center;
     text-align: center;
     justify-items: center;
 }
-#seleccion_shop .seleccion_shop2{
+.seleccion_shop .seleccion_shop2{
     display: grid;
     align-content: center;
     align-items: center;
@@ -139,18 +119,17 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     height: 100px;
     background: #C4C4C4;
     border-radius: 90px;
-    margin-top: 15px;
     box-sizing: border-box;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-#seleccion_shop .seleccion_shop2 p{
+.seleccion_shop .seleccion_shop2 p{
     display: flex;
     padding-top: 15px;
     justify-content: center;
     text-align: center;
     justify-items: center;
 }
-#seleccion_shop .seleccion_shop3{
+.seleccion_shop .seleccion_shop3{
     display: grid;
     align-content: center;
     align-items: center;
@@ -162,7 +141,7 @@ border-radius: 90px;
 box-sizing: border-box;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-#seleccion_shop .seleccion_shop3 p{
+.seleccion_shop .seleccion_shop3 p{
     display: flex;
     padding-top: 15px;
     justify-content: center;
@@ -183,52 +162,91 @@ grid-template-rows: 25% 25% 25% 25%;
 }
 .formulario_mensaje form{
     grid-area: formulario_mensaje;
+    display: flex;
+    width: 35%;
+    flex-direction: column;
+    justify-content: center;
+    background: #a686e6;
+}
+.boton_contactanos{
+    display: flex;
+    justify-content: center;
 }
 .info_mar{
 }
 .ubi{
 grid-area: ubi;
+display: grid;
+justify-content: center;
+margin-bottom: 70px;
+margin-top: 15px;
 }
 .info_talleres
 #carouselExampleFade .carousel{
     grid-area: contacto_wsp;
+    margin-bottom: 150px;
+    margin-top: 150px;
 }
 #carouselExampleFade .carousel{
     grid-area: contacto_ig;
 }
 /* index  prefooter*/
+.nosotros_index{
+    display: flex;
+    justify-content: center;
+}
 #prefooter{
     display: grid;
     grid-template-areas: "prefooter1" "prefooter2" "prefooter3" "prefooter4";
     grid-template-columns: repeat(4, 500px);
     grid-template-rows: auto;
     margin-right: 50px;
+    height: auto;
+    width: auto;
+    max-height: auto;
+    max-width: 100%;
+    justify-content: center;
+    margin: auto;
 }
 div.prefooter1{
+    display: flex;
     grid-area: "prefooter1";
-    margin-left: 70px;
+    height: 100%;
+    width: auto;
+    justify-content: right;
+    margin: auto;
+    margin-right: 15px;
 }
 div.prefooter2{
     grid-area: "prefooter2";
     display: flex;
     justify-content: center;
-    margin-left: 30px;
+    height: 100%;
+    width: auto;
+    margin: auto;
+    margin-right: 15px;
 }
 div.prefooter3{
     grid-area: "prefooter3";
     display: flex;
-    justify-content: left;
-    margin-right: 30px;
+    justify-content: center;
+    height: 100%;
+    width: auto;
+    margin: auto;
+    margin-right: 15px;
 }
 div.prefooter4{
     grid-area: "prefooter4";
     display: flex;
-    justify-content: left;
-    margin-right: 70px;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    margin: auto;
+    margin-right: 15px;
 }
 /*footer grid*/
 footer{
-    display: grid;
+    display: grid; 
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 300px;
     grid-template-areas: "qr" "info" "arrepentimiento" "redes";
@@ -239,8 +257,8 @@ footer{
     margin-right: 0;
     margin-bottom: 0;
     margin-left: 0;
-    width: 100%;
-    height: 200px;
+    width: auto;
+    height: auto;
 }
 .qr{
     display: grid;
@@ -256,6 +274,10 @@ footer{
 }
 .redes{
     grid-area: "redes";
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
 }
 .arrepentimiento{
     grid-area: "arrepentimiento";
@@ -263,3 +285,34 @@ footer{
     flex-direction: column;
     align-items: center;
 }
+
+/*shop grid*/
+.shop{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "carro1" "carro2"
+    "carro1" "carro3"
+    "carro1" "carro4"
+    "carro1" "carro5";
+}
+.carro1{
+grid-area: "carro1";
+width: 100%;
+height: 100%;
+background: rgb(169, 113, 113);
+box-shadow: #000;
+}
+.carro2{
+    grid-area: "carro2";
+}
+.carro3{
+    grid-area: "carro3";
+}
+.carro4{
+    grid-area: "carro4";
+}
+.carro5{
+    grid-area: "carro5";
+}    
